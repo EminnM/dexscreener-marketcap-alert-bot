@@ -27,7 +27,7 @@ async def subscribe_to_websocket(token,value,file):
             while True:
                 message = await websocket.recv()
                 if message == "ping":
-                    print(message)
+                    #print(message)
                     await websocket.ping()
                 else:
                     try:
